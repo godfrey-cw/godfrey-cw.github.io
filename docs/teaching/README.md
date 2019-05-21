@@ -7,7 +7,7 @@ title: Teaching
 
 ## Current courses
 
--   [Math 307: Differential Equations (Winter 2019)](./Math307Winter2019/)
+<!-- -   [Math 307: Differential Equations (Winter 2019)](./Math307Winter2019/) -->
 
 
 ## Previous courses
