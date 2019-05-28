@@ -15,12 +15,13 @@
 
 <!-- # Table of Contents -->
 
-<!-- 1.  [Teaching](#org0b49d3d) -->
-<!-- 2.  [About Me](#org26e2cb0) -->
+<!-- 1.  [Teaching](#teaching) -->
+<!-- 2.  [Organizing](#organizing) -->
+<!-- 3.  [About Me](#aboutme) -->
 
 
 
-<a id="org0b49d3d"></a>
+<a id="teaching"></a>
 
 # [Teaching](./teaching)
 
@@ -33,9 +34,9 @@
 <!-- -   [Grad student $\mathcal{M}_g$ seminar](./organizing/M_gSeminar/) -->
 
 
-<a id="org26e2cb0"></a>
+<a id="aboutme"></a>
 
-# About Me
+# [About Me](./about)
 
 -   [CV](./cv.pdf)
  
