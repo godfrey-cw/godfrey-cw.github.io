@@ -22,4 +22,4 @@ Essential information
 Resources
 ---------
 
--   [Old prelim exams](./materials/old_prelims.html)
+-   [Old prelim exams](./old_prelims.html)
