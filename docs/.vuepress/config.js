@@ -15,7 +15,7 @@ module.exports = {
 	anchor: { permalink: false },
 	lineNumbers: true,
 	extendMarkdown: md => {
-	    md.use(require("@iktakahiro/markdown-it-katex"))
+	  md.use(require("@iktakahiro/markdown-it-katex"));
 	}
     },
     themeConfig: {
@@ -43,5 +43,5 @@ module.exports = {
 	// sidebarDepth: 2,
 	lastUpdated: "Last Updated",
     }
-}
+};
  

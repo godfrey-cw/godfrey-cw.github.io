@@ -9,7 +9,7 @@ Old Algebra Prelim Exams
 
 |   |   |
 |---|---|
-|  [Spring 2019](https://math.washington.edu/sites/math/files/documents/grad/algprelim-spring19.pdf)  | [Fall 2018](https://math.washington.edu/sites/math/files/documents/grad/algebra-sept-2018.pdf)  |
+| [Spring 2019](https://math.washington.edu/sites/math/files/documents/grad/algprelim-spring19.pdf)   | [Fall 2018](https://math.washington.edu/sites/math/files/documents/grad/algebra-sept-2018.pdf)  |
 | [2017](https://math.washington.edu/sites/math/files/documents/grad/algebra-2017.pdf)   | [2016](https://math.washington.edu/sites/math/files/documents/grad/prelim-exam-algebra-2016.pdf)  |
 |   [2015](https://math.washington.edu/sites/math/files/documents/grad/prelim-exam-algebra-2015.pdf) |  [2014](https://math.washington.edu/sites/math/files/documents/grad/prelim-exam-algebra-2014.pdf)  |
 | [2013](https://math.washington.edu/sites/math/files/documents/grad/prelim-exam-algebra-2013.pdf)  | [2012](https://math.washington.edu/sites/math/files/documents/grad/prelim-exam-algebra-2012.pdf)  |
