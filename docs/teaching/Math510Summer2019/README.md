@@ -21,9 +21,10 @@ Math 510A: Algebra Prelim Preparation (Summer 2019)
 | Week    | Topic                            |
 |---------|----------------------------------|
 | June 19 | [Groups](./problems/groups.html) |
-|         |                                  |
 
-
+<!-- | Week     | Topic                                                                                            | -->
+<!-- |----------|--------------------------------------------------------------------------------------------------| -->
+<!-- | June 19  | [Groups](./ProbSets/GroupsProbs.html)                                                            | -->
 <!-- | June 26  | [Groups continued](./ProbSets/GroupsProbsCtd.html), [Sylow theorems](./ProbSets/SylowProbs.html) | -->
 <!-- | July 2   | [Rings and modules](./ProbSets/RingsMods.html)                                                   | -->
 <!-- | July 9   | [Linear algebra](./ProbSets/RingsModsII.html)                                                    | -->

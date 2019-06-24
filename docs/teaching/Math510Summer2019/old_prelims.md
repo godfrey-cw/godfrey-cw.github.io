@@ -12,7 +12,7 @@ Prelims of years past (back to 2005) are all [publicly
 avaliable](https://math.washington.edu/past-phd-preliminary-exams "UW
 prelim exams"). 
 
-Those should provide plenty of practice. If for some reason you are
+Those should provide plenty of practice, but if you are
 looking for more problems to work on, there are the following
 compilations of exams from the distant past: 
 
