@@ -18,21 +18,17 @@ Math 510A: Algebra Prelim Preparation (Summer 2019)
 ## Calendar 
 
 
-| Week    | Topic                            |
-|---------|----------------------------------|
-| June 19 | [Groups](./problems/groups.html) |
-
-<!-- | Week     | Topic                                                                                            | -->
-<!-- |----------|--------------------------------------------------------------------------------------------------| -->
-<!-- | June 19  | [Groups](./ProbSets/GroupsProbs.html)                                                            | -->
-<!-- | June 26  | [Groups continued](./ProbSets/GroupsProbsCtd.html), [Sylow theorems](./ProbSets/SylowProbs.html) | -->
-<!-- | July 2   | [Rings and modules](./ProbSets/RingsMods.html)                                                   | -->
-<!-- | July 9   | [Linear algebra](./ProbSets/RingsModsII.html)                                                    | -->
-<!-- | July 16  | [Representations](./ProbSets/RepThryProbs.html)                                                  | -->
-<!-- | July 23  | [Galois theory](./ProbSets/Galois.html)                                                          | -->
-<!-- | July 30  | [Commutative algebra](./ProbSets/ComAlg.html)                                                    | -->
-<!-- | August 6 | [Homological algebra](./ProbSets/HomAlg.html)                                                    | -->
-<!-- | August 13         | The 2018 Prelim                                                                                  | -->
+| Week      | Topic                                          |
+|-----------|------------------------------------------------|
+| June 19   | [Groups](./problems/groups.html)               |
+| June 26   | [Sylow theorems](./problems/sylow.html)        |
+| July 2    | [Rings and modules](./problems/ringsmods.html) |
+| July 9    | [Linear algebra](./problems/linalg.html)       |
+| July 16   | [Representations](./problems/reps.html)        |
+| July 23   | [Galois theory](./problems/galois.html)        |
+| July 30   | [Commutative algebra](./problems/comalg.html)  |
+| August 6  | [Homological algebra](./problems/homalg.html)  |
+| August 13 | The 2018 Spring Prelim                         |
 
 
 
