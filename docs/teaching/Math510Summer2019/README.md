@@ -20,15 +20,15 @@ Math 510A: Algebra Prelim Preparation (Summer 2019)
 
 | Week      | Topic                                          |
 |-----------|------------------------------------------------|
-| June 19   | [Groups](./problems/groups.html)               |
-| June 26   | [Sylow theorems](./problems/sylow.html)        |
-| July 2    | [Rings and modules](./problems/ringsmods.html) |
-| July 9    | [Linear algebra](./problems/linalg.html)       |
-| July 16   | [Representations](./problems/reps.html)        |
-| July 23   | [Galois theory](./problems/galois.html)        |
-| July 30   | [Commutative algebra](./problems/comalg.html)  |
-| August 6  | [Homological algebra](./problems/homalg.html)  |
-| August 13 | The 2018 Spring Prelim                         |
+| June 25   | [Groups](./problems/groups.html)               |
+| July 2   | [Sylow theorems](./problems/sylow.html)        |
+| July 9    | [Rings and modules](./problems/ringsmods.html) |
+| July 16    | [Linear algebra](./problems/linalg.html)       |
+| July 23   | [Representations](./problems/reps.html)        |
+| July 30   | [Galois theory](./problems/galois.html)        |
+| August 6   | [Commutative algebra](./problems/comalg.html)  |
+| August 13  | [Homological algebra](./problems/homalg.html)  |
+| August 20 | The 2019 Spring Prelim                         |
 
 
 
