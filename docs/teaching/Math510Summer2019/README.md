@@ -22,12 +22,12 @@ Math 510A: Algebra Prelim Preparation (Summer 2019)
 |-----------|------------------------------------------------|
 | June 25   | [Groups](./problems/groups.html)               |
 | July 2   | [Sylow theorems](./problems/sylow.html)        |
+| August 13  | [Homological algebra](./problems/homalg.html)  |
+| August 6   | [Commutative algebra](./problems/comalg.html)  |
 | July 9    | [Rings and modules](./problems/ringsmods.html) |
 | July 16    | [Linear algebra](./problems/linalg.html)       |
 | July 23   | [Representations](./problems/reps.html)        |
 | July 30   | [Galois theory](./problems/galois.html)        |
-| August 6   | [Commutative algebra](./problems/comalg.html)  |
-| August 13  | [Homological algebra](./problems/homalg.html)  |
 | August 20 | The 2019 Spring Prelim                         |
 
 
