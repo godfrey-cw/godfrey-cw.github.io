@@ -9,7 +9,7 @@ Galois theory
 ### 2014 Problems 2, 6
 
 
-# 2013 Problem 6
+### 2013 Problem 6
 
 
 ### 2012 Problem 6
