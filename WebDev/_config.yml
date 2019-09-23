@@ -18,6 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+
+# Build settings
+theme: minima
+
 title: Charlie Godfrey's Home Page
 author: Charlie Godfrey
 email: cgodfrey@uw.edu
@@ -29,12 +33,23 @@ url: "https://math.washington.edu/~cgodfrey"
 github_username:  godfrey-cw
 linkedin_username: godfrey-cw
 
-# Build settings
-theme: minima
+# If you want to link only specific pages in your header, uncomment
+# this and add the path to the pages in order as they should show up
+header_pages:
+- about.md
+- index.md
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-scholar
+
+scholar:
+  source: /_bibliography
+  bibliography: thesis.bib
+  # style: 
+
 
 
 # Exclude from processing.
