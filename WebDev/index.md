@@ -8,7 +8,7 @@ title: Home
 
 
 |--------------|--------------------------------------------------|
-| Office       | [ART 336](http://www.washington.edu/maps/#!/ART) |
+| Office       | [ART 336](https://www.washington.edu/maps/#!/ART) |
 | Office Hours | T/Th, 2:30-3:30                                  |
 
 
