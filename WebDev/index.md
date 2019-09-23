@@ -12,7 +12,7 @@ title: Home
 | Office Hours | T/Th, 2:30-3:30                                  |
 
 
-# [Algebra 504](/teaching/algebra.html)
+# [Algebra 504](./teaching/algebra.html)
 
 I'll be grading Sándor Kovács's 500-level (graduate) Algebra class
 this year. 
