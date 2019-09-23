@@ -27,8 +27,8 @@ author: Charlie Godfrey
 email: cgodfrey@uw.edu
 description: >
   Algebraic geometry (singularities and moduli spaces)
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://math.washington.edu/~cgodfrey" 
+baseurl: "/~cgodfrey" 
+url: "https://math.washington.edu/" 
 # twitter_username: jekyllrb
 github_username:  godfrey-cw
 linkedin_username: godfrey-cw
