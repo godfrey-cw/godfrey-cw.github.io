@@ -7,9 +7,9 @@ title: Home
 ---
 
 
-|--------------|--------------------------------------------------|
+|--------------|---------------------------------------------------|
 | Office       | [ART 336](https://www.washington.edu/maps/#!/ART) |
-| Office Hours | T/Th, 2:30-3:30                                  |
+| Office Hours | T/Th, 2:30-3:30                                   |
 
 
 # [Algebra 504](./teaching/algebra.html)

@@ -7,3 +7,5 @@ permalink: /about/
 
 I'm a PhD candidate in the University of Washington math department
 studying algebraic geometry. 
+
+\\( f: X \to Y \\)
