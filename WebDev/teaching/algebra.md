@@ -5,8 +5,8 @@ title: Algebra 504
 
 # Office hours
 
-TBD. Please fill out the **Doodle poll** (if you didn't receive it via
-email, let me know) if you have not already done so.
+Mondays, 3:30-5:30pm in [ART
+336](https://www.washington.edu/maps/#!/ART). 
 
 # Homework and grading
 
