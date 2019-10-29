@@ -4,7 +4,7 @@ bundle exec jekyll build && \
     git commit -m "auto-commit by quick_update.zsh" && \
     git push;
 
-cp -r ~/Documents/Web/UWWebsiteDev/WebDev/_site/* ~/Documents/Web/UWWebsite/;
+cp -r ./_site/* ~/Documents/Web/UWWebsite/;
 
 cd ~/Documents/Web/UWWebsite/;
 
