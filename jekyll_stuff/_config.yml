@@ -22,7 +22,7 @@
 # Build settings
 theme: minima
 
-title: Charlie Godfrey's Home Page
+title: Charlie Godfrey's homepage
 author: Charlie Godfrey
 email: cgodfrey@uw.edu
 description: >
@@ -36,8 +36,18 @@ linkedin_username: godfrey-cw
 # If you want to link only specific pages in your header, uncomment
 # this and add the path to the pages in order as they should show up
 header_pages:
-- about.md
 - index.md
+- teaching/index.md
+- CV.md
+# - about.md
+
+# # need this for including cv?
+# defaults:
+#   - scope:
+#       path: "assets/pdfs"
+#     values:
+#       title: CV
+#       url: assets/pdfs/CV.pdf 
 
 plugins:
   - jekyll-feed
@@ -47,10 +57,8 @@ plugins:
 
 scholar:
   source: /_bibliography
-  bibliography: thesis.bib
+  bibliography: master.bib
   # style: 
-
-
 
 # Exclude from processing.
 # The following items will not be processed, by default.

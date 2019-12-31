@@ -16,7 +16,8 @@ layout: default
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
+      {% if page.redirect %}<p> Redirecting to <a href="{{ page.redirect }}">{{ page.redirect }}</a> ...</p>{% endif %}
+      {{ content }}
   </div>
 
   {%- if site.disqus.shortname -%}

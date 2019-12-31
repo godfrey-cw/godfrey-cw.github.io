@@ -9,4 +9,6 @@
     {%- include google-analytics.html -%}
   {%- endif -%}
   <script src="{{ "/assets/js/mathjax/tex-chtml-full.js" | relative_url }}" id="MathJax-script" async></script>
+  <!-- allows redirecting see https://stackoverflow.com/questions/33393953/jekyll-redirect-entire-directory -->
+  {% if page.redirect %}<meta http-equiv="refresh" content="0; url={{ page.redirect }}">{% endif %}
 </head>

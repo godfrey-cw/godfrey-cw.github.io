@@ -6,13 +6,21 @@ layout: home
 title: Home
 ---
 
+I'm a PhD in the University of Washington math department studying
+algebraic geometry. My research focuses on singularities coming from
+the minimal model program and moduli of varieties (in particular rational
+singularities). Particular points of interest are:
+  
+- applications of intersection theory and Hodge theory<!-- , in the spirit of -->
+  <!-- {% cite chatzistamatiouHigherDirectImages2011 %}, {% cite -->
+  <!-- chatzistamatiouHodgeWittCohomologyWittRational2012  %} -->
+  
+- positive-characteristic behavior
 
-|--------------|---------------------------------------------------|
-| Office       | [ART 336](https://www.washington.edu/maps/#!/ART) |
-| Office Hours | T/Th, 2:30-3:30                                   |
+- infinitesimal deformations of MMP singularities<!-- , following {% cite altmannDualizingSheafFirstorder2016 %}. -->
+
+<!-- {% bibliography --cited %} -->
 
 
-# [Algebra 504](./teaching/algebra.html)
 
-I'll be grading Sándor Kovács's 500-level (graduate) Algebra class
-this year. 
+
