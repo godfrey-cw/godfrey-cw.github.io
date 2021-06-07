@@ -1,0 +1,65 @@
+# Welcome to Jekyll!
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Build settings
+theme: minima
+
+# lots of changes upcoming ... see the github readme 
+# minima:
+#   skin: classic
+
+baseurl: "/~cgodfrey" 
+url: "https://math.washington.edu/" 
+
+title: Charles Godfrey
+header_pages:
+- index.md
+- teaching/index.md
+- CV.md
+# - about.md
+
+description: >
+  Home Page
+  
+# author: Charles Godfrey
+email: "cgodfrey@uw.edu"
+
+github_username:  godfrey-cw
+linkedin_username: godfrey-cw
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-scholar
+  - jekyll-redirect-from
+
+scholar:
+  source: /_bibliography
+  bibliography: website.bib
+  sort_by: author
+  # style: 
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - quick_update.zsh
+
