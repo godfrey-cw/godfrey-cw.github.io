@@ -1,1 +1,1 @@
-Sitemap: https://math.washington.edu//~cgodfrey/sitemap.xml
+Sitemap: /sitemap.xml
