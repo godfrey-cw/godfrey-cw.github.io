@@ -15,9 +15,11 @@
 <script type="application/ld+json">
 {"@type":"WebPage","url":"/teaching/past_courses/math510/problems/groups.html","headline":"Group Theory","description":"Home Page","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Charlie Godfrey" /><!-- not working? -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Charlie Godfrey" /><!-- mathjax -->
   <script src="/assets/js/mathjax-config.js" id="MathJax-config" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" defer></script>
+  <!-- katex css, copied from https://katex.org/docs/browser.html -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous"> -->
   <!-- allows redirecting see https://stackoverflow.com/questions/33393953/jekyll-redirect-entire-directory -->
   
 </head>
@@ -149,31 +151,21 @@ in part (b) different from the “usual” ones?</p>
 
 <ul>
   <li>
-    <p>Show that the functor \(\mathbf{Sub}(G) \to \mathbf{Orb}(G)\) taking a
-subgroup \(H \subset G\) to the set of cosets \(G/H\) is an equivalence
-of categories. Here \(\mathbf{Sub}(G)\) has objects the subgroups $H
-\subset G\(and morphisms *conjugations*\)c_{g}: H \to K\(taking\)h
-\mapsto g h g^{-1}\(, where\)g \in G$. The objects of
-\(\mathbf{Orb}(G)\) are <em>transitive \(G\)-sets</em> (aka \(G\)-<em>orbits</em>) and
-the morphisms are \(G\)-equivariant functions. If you took manifolds
-this might remind you of closed subgroups and homogeneous spaces.</p>
+    <p>Show that the functor \(\mathbf{Sub}(G) \to \mathbf{Orb}(G)\) taking asubgroup \(H \subset G\) to the set of cosets \(G/H\) is an equivalenceof categories. Here \(\mathbf{Sub}(G)\) has objects the subgroups \(H\subset G\)  and morphisms <em>conjugations</em>  \(c_{g}: H \to K\)  taking  \(h\mapsto g h g^{-1}\) , where  \(g \in G\). The objects of \(\mathbf{Orb}(G)\) are <em>transitive \(G\)-sets</em> (aka \(G\)-<em>orbits</em>) and the morphisms are \(G\)-equivariant functions. If you took manifolds this might remind you of closed subgroups and homogeneous spaces.</p>
   </li>
   <li>
     <p>Use the above to show that conjugacy classes of subgroups correspond
 to isomorphism classes of transitive \(G\)-sets and index
-corresponds to rank. Also show that an index \(n\) subgroup $H
-\subset G\(has at most\)n$ conjugates.</p>
+corresponds to rank. Also show that an index \(n\) subgroup \(H  \subset G\)  has at most  \(n\) conjugates.</p>
   </li>
   <li>
     <p>Finally show that the isomorphism classes of (not necessarily
 transitive) \(G\)-sets of cardinality \(n\) are in 1-1 correspondence
-with 
-\(\mathrm{Hom}_{grp}(G, S_{n})/S_{n}\) 
-where \(S_{n}\) acts on
-the right by conjugation (this is analogous to the 1-1
-correspondence of \(n\)-dimensional representations of \(G\) with
-\(\mathrm{Hom}_{grp}(G, GL_{n})\)). Explain why $\mathrm{Hom}<em>{grp}(G,
-S</em>{n})/S_{n}\(is finite when\)G$ is finitely generated.</p>
+with</p>
+
+\[\mathrm{Hom}_{grp}(G, S_{n})/S_{n}\]
+
+    <p>where \(S_{n}\) acts on  the right by conjugation (this is analogous to the 1-1  correspondence of \(n\)-dimensional representations of \(G\) with  \(\mathrm{Hom}_{grp}(G, GL_{n})\)). Explain why \(\mathrm{Hom}_{grp}(G,  S_{n})/S_{n}\)  is finite when  \(G\) is finitely generated.</p>
   </li>
 </ul>
 
@@ -182,17 +174,15 @@ S</em>{n})/S_{n}\(is finite when\)G$ is finitely generated.</p>
 <ul>
   <li>
     <p>Show that there’s a 1-1 correspondence between index \(p\)
-subgroups \(H \subset G\) and 
-\((\mathrm{Hom}_{grp}(G,
-\mathbb{Z}/p) \setminus \{0\})/(\mathbb{Z}/p)^{\times},\)
-the /non-zero/ homomorphisms \(G \to \mathbb{Z}/p\), modulo the action
-of \((\mathbb{Z}/p)^{\times}\) by scaling.</p>
+subgroups \(H \subset G\) and</p>
+
+\[(\mathrm{Hom}_{grp}(G,
+\mathbb{Z}/p) \setminus \{0\})/(\mathbb{Z}/p)^{\times},\]
+
+    <p>the /non-zero/ homomorphisms \(G \to \mathbb{Z}/p\), modulo the action  of \((\mathbb{Z}/p)^{\times}\) by scaling.</p>
   </li>
-  <li>Calcaulate the cardinality of the above quotient set in terms of the
-rank of \(\mathrm{Hom}_{grp}(G, \mathbb{Z}/p)\) over \(\mathbb{Z}/p\), and figure out a description of that rank (say, in
-terms of an elementary factors decomposition of \(G\)).</li>
-  <li>Tensor-hom adjunction (for the map \(\mathbb{Z} \to \mathbb{Z}/p\)) can improve our quality-of-life, if applied early on in this
-problem.</li>
+  <li>Calcaulate the cardinality of the above quotient set in terms of the  rank of \(\mathrm{Hom}_{grp}(G, \mathbb{Z}/p)\) over \(\mathbb{Z}/p\), and figure out a description of that rank (say, in  terms of an elementary factors decomposition of \(G\)).</li>
+  <li>Tensor-hom adjunction (for the map \(\mathbb{Z} \to \mathbb{Z}/p\)) can improve our quality-of-life, if applied early on in this  problem.</li>
 </ul>
 
 

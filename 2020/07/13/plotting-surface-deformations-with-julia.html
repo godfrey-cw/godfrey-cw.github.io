@@ -17,9 +17,11 @@
 <script type="application/ld+json">
 {"@type":"BlogPosting","url":"/2020/07/13/plotting-surface-deformations-with-julia.html","headline":"Plotting Surface Deformations with Julia","dateModified":"2020-07-13T12:17:00-07:00","datePublished":"2020-07-13T12:17:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/07/13/plotting-surface-deformations-with-julia.html"},"description":"This notebook shows how to use the Plots.jl Julia package to generate .gifs of deformations of surfaces in \\(\\mathbb{R}^3\\).","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Charlie Godfrey" /><!-- not working? -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Charlie Godfrey" /><!-- mathjax -->
   <script src="/assets/js/mathjax-config.js" id="MathJax-config" defer></script>
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" id="MathJax-script" defer></script>
+  <!-- katex css, copied from https://katex.org/docs/browser.html -->
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.13.11/dist/katex.min.css" integrity="sha384-Um5gpz1odJg5Z4HAmzPtgZKdTBHZdw8S29IecapCSB31ligYPhHQZMIlWLYQGVoc" crossorigin="anonymous"> -->
   <!-- allows redirecting see https://stackoverflow.com/questions/33393953/jekyll-redirect-entire-directory -->
   
 </head>
@@ -53,7 +55,7 @@
     <p>This notebook shows how to use the <code class="language-plaintext highlighter-rouge">Plots.jl</code> Julia package to generate <code class="language-plaintext highlighter-rouge">.gifs</code>
 of deformations of surfaces in \(\mathbb{R}^3\).</p>
 
-<p>You can download the notebook itself <a href="assets/notebooks/SurfaceDefos.ipynb">here</a>.</p>
+<p>You can download the notebook itself <a href="/assets/notebooks/SurfaceDefos.ipynb">here</a>.</p>
 
 <div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># use Plots and LinearAlgebra</span>
 <span class="k">using</span> <span class="n">LinearAlgebra</span>
@@ -142,7 +144,7 @@ of deformations of surfaces in \(\mathbb{R}^3\).</p>
 <span class="n">surf_defo</span><span class="x">(</span><span class="n">x</span><span class="x">,</span> <span class="n">y</span><span class="x">,</span> <span class="n">cone</span><span class="x">,</span> <span class="n">c</span><span class="x">)</span>
 </code></pre></div></div>
 
-<p><img src="assets/images/1sheet2sheets.gif" alt="Deforming a hyperboloid through a cone" title="Deforming a hyperboloid" /></p>
+<p><img src="/assets/images/1sheet2sheets.gif" alt="Deforming a hyperboloid through a cone" title="Deforming a hyperboloid" /></p>
 
   </div><a class="u-url" href="/2020/07/13/plotting-surface-deformations-with-julia.html" hidden></a>
 </article>
