@@ -54,42 +54,47 @@ very tedious to solve by hand. Hence the importance of computational methods to
 solve ODEs.</p>
 
 <p>Way back in the day, Euler devised an algorithm to solve an initial
-value problem of the form 
-\[y’ = f(t, y), \, \, \text{ with } \, \, y(t_0) = y_0\]
-Here’s the idea: if $\Delta t$ is a <em>small</em> time interval starting at
-$t_0$, and $t_1 = t_0+\Delta t$ (so that $\Delta t = t_1 - t_0$) then
-from the definition of the derivative we should have 
-\[
-\frac{y(t_1) - y(t_0)}{\Delta t} \approx y’(t_0) = f(t_0, y_0)
-\]
-Rearranging, this says 
-\[
-y(t_1) \approx y_0 + f(t_0, y_0) \Delta t
-\] 
-Set $y_1 = y_0 + f(t_0, y_0) \Delta t$.</p>
+value problem of the form</p>
+
+\[y' = f(t, y), \, \, \text{ with } \, \, y(t_0) = y_0\]
+
+<p>Here’s the idea: if \(\Delta t\) is a <em>small</em> time interval starting at
+\(t_0\), and \(t_1 = t_0+\Delta t\) (so that \(\Delta t = t_1 - t_0\)) then
+from the definition of the derivative we should have</p>
+
+\[\frac{y(t_1) - y(t_0)}{\Delta t} \approx y'(t_0) = f(t_0, y_0)\]
+
+<p>Rearranging, this says</p>
+
+\[y(t_1) \approx y_0 + f(t_0, y_0) \Delta t\]
+
+<p>Set \(y_1 = y_0 + f(t_0, y_0) \Delta t\).</p>
 
 <h2 id="iterating-on-the-basic-observation">Iterating on the basic observation</h2>
 
-<p>Now we can repeat this process, but starting with $t_1$ and $y_1$
-(instead of $t_0$ and $y_0$). We’ll get $t_2 = t_1+ \Delta t$, and 
-\[y_2 = y_1 + f(t_1, y_1) \Delta t\] 
-And so on  - what we’re doing is iterating on the equation 
-\[y_{i+1} = y_i + f(t_i, y_i) (t_{i+1} - t_i)\]</p>
+<p>Now we can repeat this process, but starting with \(t_1\) and \(y_1\)
+(instead of \(t_0\) and \(y_0\)). We’ll get \(t_2 = t_1+ \Delta t\), and</p>
 
-<p>As an algorithm, Euler’s method takes as input a differential equation $y’ = f(t, y)$, a list of times $t_0, t_1, \dots, t_n$, and an initial condition $y(t_0) = y_0$. It then uses the equation $y_{i+1} = y_i + f(t_i, y_i) (t_{i+1} - t_i)$ to produce estimates $y(t_1) \approx y_1, \dots, y(t_n) \approx y_n$</p>
+\[y_2 = y_1 + f(t_1, y_1) \Delta t\]
+
+<p>And so on  - what we’re doing is iterating on the equation</p>
+
+\[y_{i+1} = y_i + f(t_i, y_i) (t_{i+1} - t_i)\]
+
+<p>As an algorithm, Euler’s method takes as input a differential equation \(y' = f(t, y)\), a list of times \(t_0, t_1, \dots, t_n\), and an initial condition \(y(t_0) = y_0\). It then uses the equation \(y_{i+1} = y_i + f(t_i, y_i) (t_{i+1} - t_i)\) to produce estimates \(y(t_1) \approx y_1, \dots, y(t_n) \approx y_n\)</p>
 
 <h2 id="implementing-the-algorithm">Implementing the algorithm</h2>
 
 <p>Below, we build a <code class="language-plaintext highlighter-rouge">python</code> function called <code class="language-plaintext highlighter-rouge">euler</code> which takes as input</p>
 
 <ul>
-  <li>a function $f(t, y)$ (the right hand side of the ODE),</li>
-  <li>an initial value $y_0$</li>
-  <li>a “time” interval $[t_{min}, t_{max}]$ (with $t_0 = t_{min}$), and</li>
-  <li>a number of steps $n$ (in other words, $[t_{min}, t_{max}]$ will get broken into $t_{min} = t_0 &lt; t_1 &lt; t_2 &lt; \dots &lt; t_n = t_{max}$).</li>
+  <li>a function \(f(t, y)\) (the right hand side of the ODE),</li>
+  <li>an initial value \(y_0\)</li>
+  <li>a “time” interval \([t_{min}, t_{max}]\) (with \(t_0 = t_{min}\)), and</li>
+  <li>a number of steps \(n\) (in other words, \([t_{min}, t_{max}]\) will get broken into \(t_{min} = t_0 &lt; t_1 &lt; t_2 &lt; \dots &lt; t_n = t_{max}\)).</li>
 </ul>
 
-<p>The output of <code class="language-plaintext highlighter-rouge">euler</code> will be a pair of arrays <code class="language-plaintext highlighter-rouge">t, y</code>, where <code class="language-plaintext highlighter-rouge">t = [t_0, t_1, \dots, t_n]</code> is the list of times and <code class="language-plaintext highlighter-rouge">y = [y_0, y_1, \dots, y_n]</code> is the list of (approximate) $y$-values at those times.</p>
+<p>The output of <code class="language-plaintext highlighter-rouge">euler</code> will be a pair of arrays <code class="language-plaintext highlighter-rouge">t, y</code>, where <code class="language-plaintext highlighter-rouge">t = [t_0, t_1, \dots, t_n]</code> is the list of times and <code class="language-plaintext highlighter-rouge">y = [y_0, y_1, \dots, y_n]</code> is the list of (approximate) \(y\)-values at those times.</p>
 
 <h2 id="packages">Packages</h2>
 
@@ -131,7 +136,7 @@ And so on  - what we’re doing is iterating on the equation
 
 <h3 id="example">Example</h3>
 
-<p>To test our work, let’s use the simple equation $y’ = - y + 1$</p>
+<p>To test our work, let’s use the simple equation \(y' = - y + 1\)</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">test_f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">*</span><span class="n">y</span> <span class="o">+</span> <span class="mi">1</span>
@@ -173,11 +178,11 @@ And so on  - what we’re doing is iterating on the equation
 
 <h3 id="example-1">Example</h3>
 
-<p>The autonomous equation $y’ = \frac{y - y^3}{10}$ (slope field below).</p>
+<p>The autonomous equation \(y' = \frac{y - y^3}{10}\) (slope field below).</p>
 
 <p><img src="./aut_slope_field.png" alt="It's slope field looks like" /></p>
 
-<p>Note that there are stable equilibria at $y= \pm 1$, and an unstable equilibrium at $y=0$. We could solve this equation (using partial fractions!) but instead let’s just use Euler’s method:</p>
+<p>Note that there are stable equilibria at \(y= \pm 1\), and an unstable equilibrium at \(y=0\). We could solve this equation (using partial fractions!) but instead let’s just use Euler’s method:</p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
     <span class="k">return</span> <span class="p">(</span><span class="n">y</span> <span class="o">-</span> <span class="n">y</span><span class="o">**</span><span class="mi">3</span><span class="p">)</span><span class="o">/</span><span class="mi">10</span>
@@ -199,9 +204,11 @@ And so on  - what we’re doing is iterating on the equation
 
 <h3 id="example-2">Example</h3>
 
-<p>The first order linear equation 
-\[y’ + \frac{y}{2+ \sin(2 \pi t)} = e^{0.1 t} - 1\]<br />
-<img src="./FOL_slope_field.png" alt="It's slope field looks like" /></p>
+<p>The first order linear equation</p>
+
+\[y' + \frac{y}{2+ \sin(2 \pi t)} = e^{0.1 t} - 1\]
+
+<p><img src="./FOL_slope_field.png" alt="It's slope field looks like" /></p>
 
 <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># Define function on the RHS of the ODE:
 </span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>

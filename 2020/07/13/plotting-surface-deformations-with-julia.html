@@ -7,15 +7,15 @@
 <meta name="generator" content="Jekyll v4.2.0" />
 <meta property="og:title" content="Plotting Surface Deformations with Julia" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="This notebook shows how to use the Plots.jl Julia package to generate .gifs of deformations of surfaces in $\mathbb{R}^3$." />
-<meta property="og:description" content="This notebook shows how to use the Plots.jl Julia package to generate .gifs of deformations of surfaces in $\mathbb{R}^3$." />
+<meta name="description" content="This notebook shows how to use the Plots.jl Julia package to generate .gifs of deformations of surfaces in \(\mathbb{R}^3\)." />
+<meta property="og:description" content="This notebook shows how to use the Plots.jl Julia package to generate .gifs of deformations of surfaces in \(\mathbb{R}^3\)." />
 <meta property="og:site_name" content="Charlie Godfrey" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-07-13T12:17:00-07:00" />
 <meta name="twitter:card" content="summary" />
 <meta property="twitter:title" content="Plotting Surface Deformations with Julia" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","url":"/2020/07/13/plotting-surface-deformations-with-julia.html","headline":"Plotting Surface Deformations with Julia","dateModified":"2020-07-13T12:17:00-07:00","datePublished":"2020-07-13T12:17:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/07/13/plotting-surface-deformations-with-julia.html"},"description":"This notebook shows how to use the Plots.jl Julia package to generate .gifs of deformations of surfaces in $\\mathbb{R}^3$.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"/2020/07/13/plotting-surface-deformations-with-julia.html","headline":"Plotting Surface Deformations with Julia","dateModified":"2020-07-13T12:17:00-07:00","datePublished":"2020-07-13T12:17:00-07:00","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/07/13/plotting-surface-deformations-with-julia.html"},"description":"This notebook shows how to use the Plots.jl Julia package to generate .gifs of deformations of surfaces in \\(\\mathbb{R}^3\\).","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="/feed.xml" title="Charlie Godfrey" /><!-- not working? -->
   <script src="/assets/js/mathjax-config.js" id="MathJax-config" defer></script>
@@ -51,7 +51,7 @@
 
   <div class="post-content e-content" itemprop="articleBody">
     <p>This notebook shows how to use the <code class="language-plaintext highlighter-rouge">Plots.jl</code> Julia package to generate <code class="language-plaintext highlighter-rouge">.gifs</code>
-of deformations of surfaces in $\mathbb{R}^3$.</p>
+of deformations of surfaces in \(\mathbb{R}^3\).</p>
 
 <p>You can download the notebook itself <a href="assets/notebooks/SurfaceDefos.ipynb">here</a>.</p>
 
@@ -84,9 +84,9 @@ of deformations of surfaces in $\mathbb{R}^3$.</p>
 </code></pre></div></div>
 
 <h1 id="generating-gifs">Generating <code class="language-plaintext highlighter-rouge">.gifs</code></h1>
-<p>Now we use <code class="language-plaintext highlighter-rouge">Plots.jl</code>’s handy <code class="language-plaintext highlighter-rouge">@gif</code>. We’ll encode a surface deformation as a parameterized family of functions $f(x, y, c)$, encoded as a function $h \colon \mathbb{R} \to \mathrm{Functions}(\mathbb{R}^2, \mathbb{R})$ taking $c \mapsto f(x, y, c)$.</p>
+<p>Now we use <code class="language-plaintext highlighter-rouge">Plots.jl</code>’s handy <code class="language-plaintext highlighter-rouge">@gif</code>. We’ll encode a surface deformation as a parameterized family of functions \(f(x, y, c)\), encoded as a function \(h \colon \mathbb{R} \to \mathrm{Functions}(\mathbb{R}^2, \mathbb{R})\) taking \(c \mapsto f(x, y, c)\).</p>
 
-<p>To prevend the $z$ limits from jumping around, we compute their max and min values.</p>
+<p>To prevend the \(z\) limits from jumping around, we compute their max and min values.</p>
 
 <div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span><span class="nf"> surf_defo</span><span class="x">(</span><span class="n">x</span><span class="x">,</span> <span class="n">y</span><span class="x">,</span> <span class="n">h</span><span class="x">,</span> <span class="n">c</span><span class="x">)</span>
     <span class="n">X</span> <span class="o">=</span> <span class="n">ones</span><span class="x">(</span><span class="n">length</span><span class="x">(</span><span class="n">y</span><span class="x">))</span><span class="o">*</span><span class="n">transpose</span><span class="x">(</span><span class="n">x</span><span class="x">)</span>
@@ -116,7 +116,7 @@ of deformations of surfaces in $\mathbb{R}^3$.</p>
 </code></pre></div></div>
 
 <h1 id="writing-down-a-deformation">Writing down a deformation</h1>
-<p>Here’s an example of the deformation $z^2 - \frac{x^2}{4} - \frac{y^2}{9} = c$ for $c \in [-1, 1]$.</p>
+<p>Here’s an example of the deformation \(z^2 - \frac{x^2}{4} - \frac{y^2}{9} = c\) for \(c \in [-1, 1]\).</p>
 
 <div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">function</span><span class="nf"> cone</span><span class="x">(</span><span class="n">c</span><span class="x">)</span>
     <span class="k">function</span><span class="nf"> fp</span><span class="x">(</span><span class="n">x</span><span class="x">,</span> <span class="n">y</span><span class="x">)</span>
@@ -134,7 +134,7 @@ of deformations of surfaces in $\mathbb{R}^3$.</p>
 </code></pre></div></div>
 
 <h1 id="rendering-a-deformation">Rendering a deformation</h1>
-<p>Here we finally run the above functions. For best results a very fine $xy$ grid is used … this might take a while.</p>
+<p>Here we finally run the above functions. For best results a very fine \(xy\) grid is used … this might take a while.</p>
 
 <div class="language-julia highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="o">:</span><span class="mf">0.001</span><span class="o">:</span><span class="mi">3</span>
 <span class="n">y</span> <span class="o">=</span> <span class="o">-</span><span class="mi">3</span><span class="o">:</span><span class="mf">0.001</span><span class="o">:</span><span class="mi">3</span>
